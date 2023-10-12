@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_test_app/style/app_colors.dart';
 
 class MainPage extends StatefulWidget {
@@ -23,15 +24,15 @@ class _MainPageState extends State<MainPage> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: SvgPicture.asset("assets/svg/ic_home.svg"),
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
+            icon: SvgPicture.asset("assets/svg/ic_heart.svg"),
             label: "Favorites",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add),
+            icon: SvgPicture.asset("assets/svg/ic_add.svg"),
             label: "Add Post",
           ),
         ],
